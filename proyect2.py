@@ -123,7 +123,7 @@ def menu():
 
     
     
-    labels = ["Posible sano", "Posible enfermo"]
+    labels = ["Posible enfermo", "Posible sano"]
     count_classes = pd.value_counts(datos['output'], sort = True)
     count_classes.plot(kind = 'bar', rot=0)
     plt.xticks(range(2), labels)
